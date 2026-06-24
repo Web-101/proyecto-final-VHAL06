@@ -2,11 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .encabezado {
+    background-color: black;
     display: flex;
-    color: rgb(255, 255, 255);
+    color: rgb(22, 255, 251);
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -17,21 +19,99 @@
 }
 
 .lista-nav {
-    color: rgb(138, 134, 134);
+    color: rgb(140, 135, 135);
     list-style: none;
     display: flex;
     gap: 50px;
+}
+
+.lista-nav a {
+    color: rgb(166, 168, 168);
+    text-decoration: none;
 }
 
 .lista-nav a:hover{
     text-decoration: underline 2px;
     color: rgb(28, 218, 44);
     text-underline-offset: 8px; 
-
-
-
     }
-
-.contenido {
+body{
     background-color: black;
+}
+.contenido {
+    padding: 50px 0;
+    background-color: black;
+    max-width:  1000px;
+    margin: 0 auto;    
+}
+
+.portada-estreno {
+    position: absolute;
+    opacity: 0.5;
+}
+
+
+.tarjeta-poster {
+    color: white;
+    position: relative;
+    padding: 310px 20px 0px 20px;
+    max-width: 990px;
+}
+.tarjeta-poster h1 {
+    padding: 5px 0;
+}
+
+.tarjeta-poster p {
+    padding: 5px 0 10px;
+}
+
+.botones {
+    background-color: rgba(207, 204, 204, 0.246);
+    border-color: white;
+    color: white;
+    padding: 4px;
+
+}
+.generos  {
+    text-decoration: none;
+    font-weight: 500;
+    background-color: rgba(31, 31, 31, 0.246);
+    border: 2px solid;
+    padding: 1px 3px;
+}
+
+.estreno {
+    border-color: rgb(207, 6, 6);
+    color: red;
+}
+
+.cficcion {
+    border-color: blueviolet;
+    color: blueviolet;
+}
+
+.titulo-cartelera {
+    display: flex;
+    color: white;
+    padding: 50px 10px 20px 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+
+.tarjeta-peliculas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cartelera-peliculas {
+    padding-top: 40px;
+    color: rgb(162, 162, 162);
+}
+
+.info-pelicula {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: self-start;
 }

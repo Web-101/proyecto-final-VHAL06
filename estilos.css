@@ -35,9 +35,11 @@
     color: rgb(28, 218, 44);
     text-underline-offset: 8px; 
     }
+
 body{
     background-color: black;
 }
+
 .contenido {
     padding: 50px 0;
     background-color: black;
@@ -45,9 +47,17 @@ body{
     margin: 0 auto;    
 }
 
+.estrenos {
+    max-width: 1000px;
+}
+
 .portada-estreno {
     position: absolute;
     opacity: 0.5;
+    width: 1000px;
+    height: 500px;
+    border: 1px solid gray;
+
 }
 
 
@@ -66,28 +76,76 @@ body{
 }
 
 .botones {
-    background-color: rgba(207, 204, 204, 0.246);
-    border-color: white;
-    color: white;
-    padding: 4px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    padding: 8px;
+    gap: 6px;
+
+}
+.trailer {
+    background-color: rgba(55, 50, 50, 0.365);
+    border-color: rgb(0, 0, 0);
+    color: rgb(255, 253, 253);
 
 }
 .generos  {
     text-decoration: none;
     font-weight: 500;
-    background-color: rgba(31, 31, 31, 0.246);
     border: 2px solid;
     padding: 1px 3px;
 }
 
 .estreno {
-    border-color: rgb(207, 6, 6);
-    color: red;
+    border-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.304);
 }
-
 .cficcion {
-    border-color: blueviolet;
-    color: blueviolet;
+    border-color: rgb(125, 0, 243);
+    color: rgb(122, 0, 236);
+    background-color: rgba(133, 4, 254, 0.298);
+}
+.aventura {
+    border-color: rgb(7, 119, 7);
+    color:rgb(7, 119, 7);
+    background-color: rgba(7, 119, 7, 0.185);
+    
+}
+.terror {
+    border-color: rgb(255, 0, 0);
+    color: rgb(255, 0, 0);
+    background-color: rgba(255, 0, 0, 0.275);
+}
+.accion {
+    border-color: rgb(255, 157, 0);
+    color: rgb(255, 157, 0);
+    background-color: rgba(255, 157, 0, 0.326);;
+}
+.comedia {
+    border-color: rgb(144, 226, 43);
+    color: rgb(144, 226, 43);
+    background-color: rgba(144, 226, 43, 0.327);;
+}
+.infantil {
+    border-color: rgb(41, 255, 237);
+    color: rgb(41, 255, 237);
+    background-color: rgba(41, 255, 237, 0.304);;
+}
+.fantasia {
+    border-color: rgb(247, 255, 8);
+    color: rgb(247, 255, 8);
+    background-color: rgba(247, 255, 8, 0.322);;
+}
+.suspenso {
+    border-color: rgb(5, 56, 98);
+    color: rgb(5, 56, 98);
+    background-color: rgba(5, 28, 98, 0.282);;
+}
+.romance {
+    border-color: rgb(226, 43, 159);
+    color: rgb(226, 43, 159);
+    background-color: rgba(226, 43, 159, 0.333);;
 }
 
 .titulo-cartelera {
@@ -99,19 +157,59 @@ body{
     border-bottom: 1px solid gray;
 }
 
-.tarjeta-peliculas {
+.cartelera-peliculas {
+    padding: 50px 0 50px 0;
     display: flex;
     flex-wrap: wrap;
 }
 
-.cartelera-peliculas {
-    padding-top: 40px;
-    color: rgb(162, 162, 162);
-}
 
 .info-pelicula {
+    position: absolute;
+    bottom: 70px;
+    left: 20px;
+    right: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.tarjeta-peliculas {
+    flex: 10px;
+    padding-bottom: 45px;  
+    width: 280px;
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    align-items: self-start;
+    position: relative;
+    
+}
+
+.tarjeta-peliculas img {
+    width: 280px;
+    height: 420px;
+    opacity: 0.4;
+    display: block;
+    border: 1px solid gray;
+}
+
+.tarjeta-peliculas button {
+    background: rgba(83, 81, 81, 0.461);
+    border: 2px solid rgb(56, 54, 54);
+    color: rgb(227, 220, 220);
+    padding: 8px 93px;
+}
+
+.extras {
+    border-top: 1px solid rgba(128, 128, 128, 0.508);
+    padding: 100px 0;
+    display: flex;
+    color: rgb(109, 109, 107);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    max-height: 100px;
+}
+
+.extras-enlaces {
+    display: flex;
+    gap:50px
 }

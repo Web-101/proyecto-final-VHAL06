@@ -1,6 +1,5 @@
 .info-lateral {
     width: 400px;
-    flex-shrink: 0;
     padding: 25px;
     color: wheat;
     display: flex;
@@ -59,15 +58,12 @@
     border-bottom: 1px solid gray;
     padding: 5px 0;
 }
-
 .fila .sub-titulos {
     color: rgb(200, 183, 178);
 }
-
 .fila .sub-texto {
     color: white;
 }
-
 .contenido-principal {
     flex: 1;
 }

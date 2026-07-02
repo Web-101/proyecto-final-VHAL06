@@ -1,14 +1,15 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
+ <!DOCTYPE html>
+ <html lang="es">
+ <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalles Pelicula</title>
     <link rel="stylesheet" href="estilos.css">
-</head>
+    <link rel="stylesheet" href="detalles.css">
+ </head>
 
-<body>
+ <body>
     <header class="encabezado">
         <h1>NEO-CINEMA</h1>
         <ul class="lista-nav">
@@ -20,84 +21,106 @@
     </header> 
 
     <main class="detalles-peliculas">
-        <aside class="info-lateral">
 
-            <img src="https://moviepostermexico.com/cdn/shop/files/how_to_train_your_dragon_ver15_xlg_1024x1024@2x.jpg?v=1748284602" alt="poster pelicula">
-            <button class="trailer-btn">Ver Trailer</button>
+        <div class="contenido-principal">
+            <section class="titulo-detalles">
+
+                <div class="etiquetas">
+                    <a class="generos fantasia" href="#">FANTASIA</a>
+                    <p class="clasificacion">16+</p>
+                </div>
+
+                <h1>COMO ENTRENAR A TU DRAGON</h1>
+                <div class="datos-pelicula">
+                    <p><i class="fa-regular fa-clock"></i> 142 min</p>
+                    <p><i class="fa-regular fa-calendar"></i> Estreno: Oct 2024</p>
+                    <p><i class="fa-solid fa-star"></i> 8.9/10</p>
+                    <p><i class="fa-regular fa-star"></i> 95%</p>
+                </div>
+            </section>
+
+            <section class="sinopsis">
+                <h3>Sinopsis</h3>
+                <p>En un futuro cercano donde las inteligencias artificiales han formado su propia sociedad oculta en la red profunda, un detective cibernético descubre un complot que amenaza con borrar la línea entre la realidad física y el constructo digital. A medida que se adentra en el bajo mundo de neón de Nueva Tokio, debe decidir de qué lado de la singularidad se encuentra. La resistencia digital está ganando terreno, y las corporaciones que controlan los servidores principales están dispuestas a todo para mantener el control. Un thriller visualmente deslumbrante que cuestiona la esencia misma de la conciencia.</p>
+            </section>
+
+            <section class="horarios">
+                <h3>Horarios Disponibles</h3>
+                <div class="sucursal">
+                    <h4>Sucursal El Trompillo</h4>
+                    <div class="botones-horario">
+                        <button>13:00</button>
+                        <button>15:30</button>
+                        <button>18:00</button>
+                        <button>20:30</button>
+                    </div>
+                </div>
+                <div class="sucursal">
+                    <h4>Sucursal Las Brisas</h4>
+                    <div class="botones-horario">
+                        <button>14:00</button>
+                        <button>16:30</button>
+                        <button>19:00</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="reparto">
+                <h3>Reparto Principal</h3>
+                <div class="actores">
+                    <div class="perfil-actor">
+                        <img src="https://via.placeholder.com/80x80" alt="actor">
+                        <h4>Camacho</h4>
+                        <p>Batman</p>
+                    </div>
+                    <div class="perfil-actor">
+                        <img src="https://via.placeholder.com/80x80" alt="actor">
+                        <h4>Julio</h4>
+                        <p>Tomas Wayne</p>
+                    </div>
+                    <div class="perfil-actor">
+                        <img src="https://via.placeholder.com/80x80" alt="actor">
+                        <h4>Messi</h4>
+                        <p>Robin</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <aside class="info-lateral">
+            <div class="caja-portada">
+                <img src="https://media.revistagq.com/photos/61bb3b6b36216799ec22c162/16:9/w_1280,c_limit/harry-potter-hbo-max.jpeg" alt="poster pelicula">
+            </div>
+            <button class="trailer-btn"><i class="fa-regular fa-circle-play"></i> Ver Trailer</button>
+            
             <div class="especificaciones">
-                <h3>Especificaciones</h3>
-                <p class="sub-titulos">Formato</p>
-                <p class="sub-texto">IMAX Digital, RealD 3D</p>
-                <p class="sub-titulos">Sonido</p>
-                <p class="sub-texto">Dolby Atmos, DTS:X</p>
-                <p class="sub-titulos">Ratio</p>
-                <p class="sub-texto">2.39:1 / 1.90:1 (IMAX)</p>
+                <h3><i class="fa-solid fa-microchip"></i> Especificaciones</h3>
+                <div class="fila">
+                    <p class="sub-titulos">Formato</p>
+                    <p class="sub-texto">IMAX Digital, RealD 3D</p>
+                </div>
+                <div class="fila">
+                    <p class="sub-titulos">Sonido</p>
+                    <p class="sub-texto">Dolby Atmos, DTS:X</p>
+                </div>
+                <div class="fila">
+                    <p class="sub-titulos">Ratio</p>
+                    <p class="sub-texto">2.39:1 / 1.90:1 (IMAX)</p>
+                </div>
             </div>
         </aside>
-
-        <div class="titulo-detalles">
-        <a class="generos fantasia" href="#">FANTASIA</a>
-        <p class="clasificacion">16+</p>
-        <h1>COMO ENTRENAR A TU DRAGON</h1>
-        </div>
-
-        <div class="sinopsis">
-            <h3>Sinopsis</h3>
-            <p>En un futuro cercano donde las inteligencias artificiales han formado su propia sociedad
-oculta en la red profunda, un detective cibernético descubre un complot que amenaza
-con borrar la línea entre la realidad física y el constructo digital. A medida que se
-adentra en el bajo mundo de neón de Nueva Tokio, debe decidir de qué lado de la
-singularidad se encuentra. La resistencia digital está ganando terreno, y las
-corporaciones que controlan los servidores principales están dispuestas a todo para
-mantener el control. Un thriller visualmente deslumbrante que cuestiona la esencia
-misma de la conciencia.</p>
-
-        </div>
-        <section class="horarios">
-            <h1>Horarios Disponibles</h1>
-            <div class="sucursal-A">
-                <h3>Sucursal El Trompillo</h3>
-                <button>13:00</button>
-                <button>13:00</button>
-                <button>13:00</button>
-                <button>13:00</button>
-            </div>
-            <div class="sucursal-B">
-                <h3>Sucursal Las Brisas</h3>
-                <button>13:00</button>
-                <button>13:00</button>
-                <button>13:00</button>
-            </div>
-        </section>
-
-        <section class="reparto">
-            <h1>Reparto Principal</h1>
-
-            <div class="perfil-actor">
-            <img src="" alt="">
-            <h3>Camacho</h3>
-            <h4>Batman</h4>
-            </div>
-
-            <div class="perfil-actor">
-            <img src="" alt="">
-            <h3>Julio</h3>
-            <h4>Tomas Wayne</h4>
-            </div>
-        </section>
-
     </main>
 
     <footer class="extras">
         <h3>NEO-CINEMA</h3>
         <div class="extras-enlaces">
-        <p>Politica de Privacidad</p>
-        <p>Terminos de Servicio</p>
-        <p>Contacto de Soporte</p>
-        <p>Ayuda</p>
+            <p>Politica de Privacidad</p>
+            <p>Terminos de Servicio</p>
+            <p>Contacto de Soporte</p>
+            <p>Ayuda</p>
         </div>
-        <h3>@2026 MEO-CINEMA IMMERSION GARANTIZADA</h3>
-        <h3> !! TRABAJO DE VICTOR ALBA !!</h3>
+        <h3>@2026 NEO-CINEMA IMMERSION GARANTIZADA</h3>
+        <h3>!! TRABAJO DE VICTOR ALBA !!</h3>
     </footer>
-</body>
-</html>
+ </body>
+ </html>

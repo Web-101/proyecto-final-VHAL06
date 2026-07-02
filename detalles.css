@@ -1,0 +1,85 @@
+.info-lateral {
+    width: 400px;
+    flex-shrink: 0;
+    padding: 25px;
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caja-portada {
+    width: 350px;
+    height: 350px;
+    box-shadow: 0 0 10px 8px rgba(8, 77, 77, 0.776);
+    border: 15px solid rgba(35, 36, 36, 0.586);
+    border-radius: 8px;
+
+}
+
+.caja-portada img {
+    width: 100%;
+    height: 100%;
+}
+
+.trailer-btn {
+    width: 350px;
+    height: 60px;
+    margin-top: 140px;
+    font-weight: 500;
+    font-size: 22px;
+    border-radius: 5px;
+    background-color: black;
+    color: cyan;
+    border-color: cyan;
+    cursor: pointer;
+}
+
+.especificaciones {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+    background-color: rgba(29, 27, 27, 0.523);
+    width: 350px;
+    height: 200px;
+    justify-content: center;
+    margin-top: 40px;
+    border-radius: 8px;
+    gap: 10px;
+}
+
+.especificaciones h3 {
+    color: cyan;
+    font-size: 22px;
+}
+
+.fila {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    padding: 5px 0;
+}
+
+.fila .sub-titulos {
+    color: rgb(200, 183, 178);
+}
+
+.fila .sub-texto {
+    color: white;
+}
+
+.contenido-principal {
+    flex: 1;
+}
+
+.detalles-peliculas {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 40px;
+    align-items: flex-start;
+    color: gray;
+}
+

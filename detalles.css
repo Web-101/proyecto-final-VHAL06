@@ -58,12 +58,15 @@
     border-bottom: 1px solid gray;
     padding: 5px 0;
 }
+
 .fila .sub-titulos {
     color: rgb(200, 183, 178);
 }
+
 .fila .sub-texto {
     color: white;
 }
+
 .contenido-principal {
     flex: 1;
 }
@@ -79,3 +82,131 @@
     color: gray;
 }
 
+.etiquetas {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+
+}
+
+
+.clasificacion {
+    border: 3px solid gray;
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    height: 27.5px;
+    background-color: rgba(128, 128, 128, 0.324);
+}
+
+.titulo-detalles h1 {
+    color: white;
+    font-size: 50px;
+}
+
+.datos-pelicula {
+    display: flex;
+    gap: 20px;
+    padding: 20px 2px;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.382);
+}
+.datos-pelicula i {
+    color: aqua;
+}
+
+.sinopsis{
+    background-color: rgba(48, 43, 43, 0.368);
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 8px;
+}
+.sinopsis h3{
+    color: white;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.sinopsis p {
+    font-size: 18px;
+    color: rgba(23, 236, 255, 0.518);
+}
+
+
+.horarios {
+    margin: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.horarios h3 {
+    color: white;
+    font-size: 26px;
+    width: 100%;  
+
+}
+.horarios i {
+    color: aqua;
+}
+
+.sucursal {
+    margin: 20px 0;
+    background-color: rgba(48, 43, 43, 0.368);
+    flex-wrap: wrap;
+    display: flex;
+    width: 350px;
+    height: 250px;
+    padding: 27px;
+}
+.sucursal h4 {
+    color: rgb(128, 128, 128);
+    font-size: 20px;
+}
+
+.botones-horario{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px 6px;
+}
+
+.botones-horario button{
+    width: 145px;
+    height: 70px;
+    background-color: rgba(48, 43, 43, 0.368);
+    border-color: rgb(67, 77, 77);
+    color: white;
+}
+
+.reparto {
+    background-color: rgba(48, 43, 43, 0.368);
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 8px;
+
+}
+
+.reparto h3 {
+    color: white;
+    font-size: 20px;
+}
+
+.actores {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 50px;
+    height: 150px;
+    padding-top: 10px;
+}
+
+.perfil-actor img{
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    border: 2px solid gray;
+    justify-content: center;
+}
+
+.perfil-actor h4 {
+    color: aqua;
+    justify-content: center;
+}

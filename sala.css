@@ -1,3 +1,4 @@
+
 .sala-compra {
     color: white;
     padding: 50px;
@@ -52,31 +53,127 @@
     flex: 1;
 }
 
-.butacas {
+.caja-butacas {
     margin: 0 auto;
     max-width: 700px;
 }
 
 .butaca {
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
     display: inline-block;
-    border-style: solid;
-    border: 1px solid gray;
+    border: 2px solid gray;
+    border-radius: 3px;
+    margin: 8px;
+    text-align: center;
 }
-.letra-fila {
-    display: block;
-    margin-bottom: 5px;
+
+.fila .butaca:nth-child(4){
+    margin-left: 60px;
+    
 }
+.fila .butaca:nth-child(7){
+    margin-right: 60px;
+
+}
+
 .fila {
+    display: flex;
+    justify-content: center;
     border-color: black;
 }
 .ocupada {
     border-color: red;
+    background-color: rgba(255, 0, 0, 0.142);
 }
 .disponible {
     border-color: aqua;
+    background-color: rgba(0, 255, 255, 0.087);
 }
 .seleccionado {
     border-color: rgb(206, 40, 206);
+    background-color: rgba(206, 40, 206, 0.049);
+
+}
+
+.fila .disponible:hover {
+    border-color: rgb(206, 40, 206);
+    background-color: rgba(206, 40, 206, 0.107);
+    cursor: pointer;
+}
+
+.guia{
+    border-color: black;
+    color: gray;
+     cursor:default;
+}
+
+
+.opciones-butacas{
+    color: gray;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top:50px;
+    gap: 6px;
+    margin-bottom: 150px;
+}
+
+
+.caja-compra {
+    border-left: 1px solid gray;
+    padding-left: 120px;
+    display: flex;
+    padding-right: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-caja {
+    border: 1px solid gray;
+    width: 400px;
+    height: 450px;
+}
+
+.detalle-compra {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    color: gray;
+    line-height: 2;
+}
+
+span h2 {
+    border-bottom:1px solid gray;
+    padding-bottom: 15px;
+    width: 100%;
+    margin-bottom:15px ;
+}
+
+.titulo {
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+}
+.dato {
+    font-weight: 700;
+}
+
+.precio-compra{
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.precio-compra p {
+    display: flex;
+    width: 60px;
+    text-align: center;
+}
+ button {
+    width: 350px;
+    height: 50px;
+    background-color: black;
+    color: gray;
+    border-color: violet;
+    margin: 5px;
 }

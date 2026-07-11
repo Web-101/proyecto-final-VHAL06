@@ -3,3 +3,13 @@
 Version "Completa" v1
 
 url para vistazo completo de la version actual: https://fanciful-lamington-1eb777.netlify.app/
+
+FALTANTE:
+1.Backend (Node.js + Express)
+2.Endpoints
+3.Fetch en el frontend
+4.Lógica de asientos
+5.Mobile-First
+6.Retoques para compatibilidad
+
++ Pulir codigo para presentacion final

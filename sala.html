@@ -6,19 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEO-SALA</title>
     <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="detalles.css">
     <link rel="stylesheet" href="sala.css">
 </head>
 <body>
     <header class="encabezado">
-        <h1>NEO-CINEMA</h1>
+        <a href="index.html"><h1>NEO-CINEMA</h1></a>
         <ul class="lista-nav">
-            <li><a href="#">CARTELERA</a></li>
-            <li><a href="#">PROX ESTRENOS</a></li>
-            <li><a href="#">MEMBRESIAS</a></li>
+            <li><a href="index.html#peliculas">CARTELERA</a></li>
+            <li><a href="index.html#estrenos">PROX ESTRENOS</a></li>
+            <li><a href="membresias.html">MEMBRESIAS</a></li>
         </ul>
         <i class="fa-regular fa-circle-user" style="font-size: 30px;"></i>
-    </header>
+    </header> 
 
     <main class="sala-compra">
         <div class="contenido-izq">
@@ -33,9 +32,21 @@
     <section class="sala-butacas">
     <div class="pantalla">PANTALLA</div>
     
-    <div class="butacas">
+    <div class="caja-butacas">
+
         <div class="fila">
-            
+            <div class="butaca guia"></div>
+            <div class="butaca guia">1</div>
+            <div class="butaca guia">2</div>
+            <div class="butaca guia">3</div>
+            <div class="butaca guia">4</div>
+            <div class="butaca guia">5</div>
+            <div class="butaca guia">6</div>
+            <div class="butaca guia">7</div>
+            <div class="butaca guia">8</div>
+        </div>
+        <div class="fila">
+            <div class="butaca guia">A</div>
             <div class="butaca disponible"></div>
             <div class="butaca disponible"></div>
             <div class="butaca ocupada"></div>
@@ -47,61 +58,69 @@
         </div>
         
         <div class="fila">
+            <div class="butaca guia">B</div>
             <div class="butaca disponible"></div>
             <div class="butaca disponible"></div>
             <div class="butaca ocupada"></div>
             <div class="butaca disponible"></div>
+            <div class="butaca disponible"></div>
+            <div class="butaca disponible"></div>
+            <div class="butaca ocupada"></div>
+            <div class="butaca disponible"></div>
+        </div>
+
+        <div class="fila">
+            <div class="butaca guia">C</div>
+            <div class="butaca disponible"></div>
+            <div class="butaca disponible"></div>
+            <div class="butaca ocupada"></div>
+            <div class="butaca disponible"></div>
+            <div class="butaca disponible"></div>
+            <div class="butaca disponible"></div>
+            <div class="butaca ocupada"></div>
+            <div class="butaca disponible"></div>
+            
+        </div>
+
+        <div class="fila">
+            <div class="butaca guia">D</div>
+            <div class="butaca disponible"></div>
+            <div class="butaca disponible"></div>
+            <div class="butaca ocupada"></div>
+            <div class="butaca disponible"></div>
+            <div class="butaca disponible"></div>
+            <div class="butaca disponible"></div>
+            <div class="butaca ocupada"></div>
+            <div class="butaca disponible"></div>
+        </div>
+
+        <div class="opciones-butacas">
+            <div class="butaca disponible"></div>
+            <p>Disponibles</p>
             <div class="butaca seleccionado"></div>
-            <div class="butaca disponible"></div>
+            <p>Seleccionadas</p>
             <div class="butaca ocupada"></div>
-            <div class="butaca disponible"></div>
-        </div>
-
-        <div class="fila">
-            <div class="butaca disponible"></div>
-            <div class="butaca disponible"></div>
-            <div class="butaca ocupada"></div>
-            <div class="butaca disponible"></div>
-            <div class="butaca disponible"></div>
-            <div class="butaca disponible"></div>
-            <div class="butaca ocupada"></div>
-            <div class="butaca disponible"></div>
-        </div>
-
-        <div class="fila">
-            <div class="butaca disponible"></div>
-            <div class="butaca disponible"></div>
-            <div class="butaca ocupada"></div>
-            <div class="butaca disponible"></div>
-            <div class="butaca disponible"></div>
-            <div class="butaca disponible"></div>
-            <div class="butaca ocupada"></div>
-            <div class="butaca disponible"></div>
-        </div>
-
-        <div class="fila">
-            <div class="butaca disponible"></div>
-            <div class="butaca seleccionado"></div>
-            <div class="butaca ocupada"></div>
+            <p>Ocupadas</p>
         </div>
     </div>
     </section>
         </div>
     <aside class="caja-compra">
 
-        <div class="detalle-compra">
-        <h2>RESUMEN DE COMPRA</h2>
-        <p>Asientos:</p>
-        <p>x3</p>
-        <P>Detalle de asiento(s):</P>
-        <p>Fila C, 4-5</p>
-        <p>Fila A, 1</p>
-        </div>
-
-        <div class="precio-compra">
-            <h2>TOTAL</h2>
-            <p>150 bs.</p>
-            <button>CONTINUAR EL PAGO -></button>
+        <div class="contenedor-caja">
+            <div class="detalle-compra">
+                <span><h2>RESUMEN DE COMPRA</h2></span>
+                <p class="titulo">Asientos:</p>
+                <p class="dato">x3</p>
+                <P class="titulo">Detalle de asiento(s):</P>
+                <p class="dato">Fila C, 4-5</p>
+                <p class="dato">Fila A, 1</p>
+                <div class="precio-compra">
+                <h2>TOTAL</h2>
+                <p>150 bs.</p>
+                </div>
+                <button>CONTINUAR EL PAGO <i class="fa-solid fa-circle-right"></i></button>
+            </div>
         </div>
         
     </aside>

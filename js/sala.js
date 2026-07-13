@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const PRECIO_POR_ASIENTO = 50;
     let asientosSeleccionados = [];
 
-    fetch(`http://localhost:3000/api/cartelera/${idPelicula}`)
+    fetch('https://proyecto-final-vhhal06.onrender.com/api/cartelera')
         .then(respuesta => respuesta.json())
         .then(pelicula => {
             document.querySelector('.detalle-sala h1').textContent = pelicula.titulo.toUpperCase();

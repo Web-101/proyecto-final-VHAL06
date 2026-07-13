@@ -155,6 +155,36 @@ const peliculas = [
         tipo: 'estreno',
         funciones: ['14:00', '16:30', '19:00', '21:00'],
         trailer: 'https://www.youtube.com/watch?v=6Z-0C02cqFo'
+    },
+    {
+        id: 11,
+        titulo: 'Deadpool & Wolverine',
+        genero: ['Romance', 'Acción','Comedia','Ciencia ficcion'],
+        claseGenero: ['romance', 'accion','comedia', 'cficcion'],
+        clasificacion: '18+',
+        duracion: 124,
+        puntuacion: 9.8,
+        reparto: ['Ryan Reynols', 'Huge Hackman'],
+        poster: 'https://lumiere-a.akamaihd.net/v1/images/tidalwave_payoff_poster_las_0a47c6a2.jpeg',
+        sinopsis: 'La apacible vida civil de Wade Wilson (Deadpool) se ve interrumpida cuando la Autoridad de Variación Temporal (TVA) lo arresta. El agente Paradox le revela que su universo está condenado a extinguirse porque su "ser ancla" (Wolverine) ha muerto. Desesperado por salvar su mundo, Deadpool viaja por el multiverso para reclutar a un nuevo Wolverine y detener la destrucción.',
+        tipo: 'cartelera',
+        funciones: ['12:00', '13:30', '14:00', '22:00'],
+        trailer: 'https://www.youtube.com/watch?v=UzFZR2dRsSY&pp=ygUUZGVhZHBvb2wgJiB3b2x2ZXJpbmU%3D'
+    },
+    {
+        id: 12,
+        titulo: 'RAMPAGE',
+        genero: ['Acción','Comedia','Ciencia ficcion'],
+        claseGenero: ['accion','comedia', 'cficcion'],
+        clasificacion: '12+',
+        duracion: 144,
+        puntuacion: 5.8,
+        reparto: ['Dwayne Johnson'],
+        poster: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1uacQ3ZIIHdZO2ioXoyYwJwJsxivjeSE-AVRGfx9_dWWQ6c3pnBl_x_A&s=10',
+        sinopsis: 'Una extraña sustancia convierte a tres animales en enormes y peligrosas bestias, y un científico debe encontrar un antídoto para la mutación antes de que destruyan todo.',
+        tipo: 'cartelera',
+        funciones: ['12:00', '13:30', '14:00', '22:00'],
+        trailer: 'https://www.youtube.com/watch?v=coOKvrsmQiI&pp=ygUPcmFtcGFnZSB0cmFpbGVy0gcJCU8LAYcqIYzv'
     }
 ];
 

@@ -5,28 +5,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEO-SALA</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="sala.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/sala.css">
+    <link rel="icon" type="image/jpeg" href="https://preview.redd.it/tem-uma-pergunta-na-sua-opini%C3%A3o-qual-filmes-s%C3%A9ries-%C3%A9-v0-cy5sc6019b6f1.jpeg?width=640&crop=smart&auto=webp&s=67c2eb0a711691a3116441d6166bc57927ccef21">
 </head>
 <body>
     <header class="encabezado">
         <a href="index.html"><h1>NEO-CINEMA</h1></a>
         <ul class="lista-nav">
-            <li><a href="index.html#peliculas">CARTELERA</a></li>
-            <li><a href="index.html#estrenos">PROX ESTRENOS</a></li>
+            <li><a href="#peliculas">CARTELERA</a></li>
+            <li><a href="#prox-es">PROX ESTRENOS</a></li>
             <li><a href="membresias.html">MEMBRESIAS</a></li>
         </ul>
-        <i class="fa-regular fa-circle-user" style="font-size: 30px;"></i>
-    </header> 
+        <a href="https://github.com/Web-101/proyecto-final-VHAL06/tree/main"><i class="fa-regular fa-circle-user" style="font-size: 30px;"></i></a>
+    </header>
 
-    <main class="sala-compra">
-        <div class="contenido-izq">
+<main class="sala-compra">
+    <div class="contenido-izq">
         <section class="detalle-sala">
-            <h1>COMO ENTRENAR A TU DRAGON</h1>
-            <div class="sala-detalle">
-            <p><i class="fa-regular fa-calendar"></i> Oct 2024, 20:15</p>
-            <p><i class="fa-solid fa-location-dot"></i> Sala 6, (IMAX)</p>
-            </div>
+            <h1></h1>
+            <div class="sala-detalle"></div>
         </section>
 
     <section class="sala-butacas">
@@ -45,53 +43,52 @@
             <div class="butaca guia">7</div>
             <div class="butaca guia">8</div>
         </div>
-        <div class="fila">
+        <div class="fila" data-fila="A">
             <div class="butaca guia">A</div>
-            <div class="butaca disponible"></div>
-            <div class="butaca disponible"></div>
-            <div class="butaca ocupada"></div>
-            <div class="butaca disponible"></div>
-            <div class="butaca disponible"></div>
-            <div class="butaca disponible"></div>
-            <div class="butaca ocupada"></div>
-            <div class="butaca disponible"></div>
+            <div class="butaca disponible" data-asiento="A1"></div>
+            <div class="butaca disponible" data-asiento="A2"></div>
+            <div class="butaca ocupada" data-asiento="A3"></div>
+            <div class="butaca disponible" data-asiento="A4"></div>
+            <div class="butaca disponible" data-asiento="A5"></div>
+            <div class="butaca disponible" data-asiento="A6"></div>
+            <div class="butaca ocupada" data-asiento="A7"></div>
+            <div class="butaca disponible" data-asiento="A8"></div>
         </div>
         
-        <div class="fila">
+        <div class="fila" data-fila="B">
             <div class="butaca guia">B</div>
-            <div class="butaca disponible"></div>
-            <div class="butaca disponible"></div>
-            <div class="butaca ocupada"></div>
-            <div class="butaca disponible"></div>
-            <div class="butaca disponible"></div>
-            <div class="butaca disponible"></div>
-            <div class="butaca ocupada"></div>
-            <div class="butaca disponible"></div>
+            <div class="butaca disponible" data-asiento="B1"></div>
+            <div class="butaca disponible" data-asiento="B2"></div>
+            <div class="butaca ocupada" data-asiento="B3"></div>
+            <div class="butaca disponible" data-asiento="B4"></div>
+            <div class="butaca disponible" data-asiento="B5"></div>
+            <div class="butaca disponible" data-asiento="B6"></div>
+            <div class="butaca ocupada" data-asiento="B7"></div>
+            <div class="butaca disponible" data-asiento="B8"></div>
         </div>
 
-        <div class="fila">
+        <div class="fila" data-fila="C">
             <div class="butaca guia">C</div>
-            <div class="butaca disponible"></div>
-            <div class="butaca disponible"></div>
-            <div class="butaca ocupada"></div>
-            <div class="butaca disponible"></div>
-            <div class="butaca disponible"></div>
-            <div class="butaca disponible"></div>
-            <div class="butaca ocupada"></div>
-            <div class="butaca disponible"></div>
-            
+            <div class="butaca disponible" data-asiento="C1"></div>
+            <div class="butaca disponible" data-asiento="C2"></div>
+            <div class="butaca ocupada" data-asiento="C3"></div>
+            <div class="butaca disponible" data-asiento="C4"></div>
+            <div class="butaca disponible" data-asiento="C5"></div>
+            <div class="butaca disponible" data-asiento="C6"></div>
+            <div class="butaca ocupada" data-asiento="C7"></div>
+            <div class="butaca disponible" data-asiento="C8"></div>
         </div>
 
-        <div class="fila">
+        <div class="fila" data-fila="D">
             <div class="butaca guia">D</div>
-            <div class="butaca disponible"></div>
-            <div class="butaca disponible"></div>
-            <div class="butaca ocupada"></div>
-            <div class="butaca disponible"></div>
-            <div class="butaca disponible"></div>
-            <div class="butaca disponible"></div>
-            <div class="butaca ocupada"></div>
-            <div class="butaca disponible"></div>
+            <div class="butaca disponible" data-asiento="D1"></div>
+            <div class="butaca disponible" data-asiento="D2"></div>
+            <div class="butaca ocupada" data-asiento="D3"></div>
+            <div class="butaca disponible" data-asiento="D4"></div>
+            <div class="butaca disponible" data-asiento="D5"></div>
+            <div class="butaca disponible" data-asiento="D6"></div>
+            <div class="butaca ocupada" data-asiento="D7"></div>
+            <div class="butaca disponible" data-asiento="D8"></div>
         </div>
 
         <div class="opciones-butacas">
@@ -102,33 +99,51 @@
             <div class="butaca ocupada"></div>
             <p>Ocupadas</p>
         </div>
+
     </div>
     </section>
-        </div>
+    </div>
+
     <aside class="caja-compra">
 
         <div class="contenedor-caja">
             <div class="detalle-compra">
                 <span><h2>RESUMEN DE COMPRA</h2></span>
                 <p class="titulo">Asientos:</p>
-                <p class="dato">x3</p>
-                <P class="titulo">Detalle de asiento(s):</P>
-                <p class="dato">Fila C, 4-5</p>
-                <p class="dato">Fila A, 1</p>
+                <p class="dato" id="cantidad-asientos">x0</p>
+                <p class="titulo">Detalle de asiento(s):</p>
+                <div id="detalle-asientos">
+                    <p class="dato">Ninguno seleccionado</p>
+                </div>
                 <div class="precio-compra">
                 <h2>TOTAL</h2>
-                <p>150 bs.</p>
+                <p id="total-pagar">0 bs.</p>
                 </div>
-                <button>CONTINUAR EL PAGO <i class="fa-solid fa-circle-right"></i></button>
+                <button id="btn-continuar">CONTINUAR EL PAGO <i class="fa-solid fa-circle-right"></i></button>
             </div>
         </div>
-        
     </aside>
+</main>
 
-    </main>
-    
+    <div class="modal" id="modal-pago">
+        <div class="modal-contenido">
+            <h2>Finalizar Compra</h2>
+            <input type="text" id="nombre" placeholder="Nombre Completo" required>
+            <input type="email" id="correo" placeholder="Correo Electrónico" required>
+            <input type="tel" id="telefono" placeholder="Teléfono (opcional)">
+            <button id="btn-comprar">FINALIZAR COMPRA</button>
+            <button id="btn-cerrar">Cancelar</button>
+        </div>
+    </div>
 
-    
+    <div class="modal" id="modal-confirmacion">
+        <div class="modal-contenido">
+            <H2 id="mensaje-gracias"></H2>
+            <DIV id="ticket-virtual"></DIV>
+            <button id="btn-cerrar-confirmacion">Cerrar</button>
+        </div>
+    </div>
+
     <footer class="extras">
         <h3>NEO-CINEMA</h3>
         <div class="extras-enlaces">
@@ -137,8 +152,11 @@
         <p>Contacto de Soporte</p>
         <p>Ayuda</p>
         </div>
-        <h3>@2026 MEO-CINEMA IMMERSION GARANTIZADA</h3>
+        <h3>@2026 MEO-CINEMA INMERSION GARANTIZADA</h3>
         <h3> !! TRABAJO DE VICTOR ALBA !!</h3>
     </footer>
+
+    <script src="js/sala.js"></script>
+    
 </body>
 </html>

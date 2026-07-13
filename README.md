@@ -2,5 +2,5 @@
 
 Proyecto Completo Final
 
-url para vistazo completo de la version final (estática - sin almacenamiento): https://neocinema-vhal-estatico.netlify.app/
-
+url para vistazo completo de la version final (estática - sin almacenamiento): [https://neocinema-vhal-estatico.netlify.app/
+](https://neocinema-vhal-estatico.netlify.app/)

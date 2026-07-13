@@ -1,0 +1,359 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.encabezado {
+    background-color: black;
+    display: flex;
+    color: rgb(22, 255, 251);
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height:70px;
+    padding: 0 20px;
+    font-weight: 700;
+    border-bottom: solid 1px rgba(99, 99, 99, 0.585);
+}
+.encabezado  a {
+    font-style: none;
+    color: aqua;
+    text-decoration: none;
+}
+.lista-nav {
+    color: rgb(140, 135, 135);
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+.lista-nav a {
+    color: rgb(166, 168, 168);
+    text-decoration: none;
+}
+.lista-nav a:hover{
+    text-decoration: underline 2px;
+    color: rgb(28, 202, 218);
+    text-underline-offset: 8px; 
+}
+
+body{
+    background-color: black;
+}
+.contenido {
+    padding: 50px 0;
+    background-color: black;
+    max-width:  1000px;
+    margin: 0 auto;    
+}
+
+.estrenos {
+    max-width: 1000px;
+}
+.portada-estreno {
+    position: absolute;
+    opacity: 0.8;
+    width: 1000px;
+    height: 500px;
+    border: 1px solid gray;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5)
+}
+.tarjeta-poster {
+    color: white;
+    position: relative;
+    padding: 310px 20px 0px 20px;
+    max-width: 990px;
+    cursor:default;
+}
+.tarjeta-poster h2 {
+    padding: 5px 0;
+    font-size: 28px;
+}
+.tarjeta-poster p {
+    padding: 5px 0 10px;
+}
+.botones {
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgba(255, 255, 255, 0.574);
+    color: rgb(0, 0, 0);
+    padding: 8px 12px;
+    gap: 6px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+}
+.trailer {
+    background-color: rgba(55, 50, 50, 0.365);
+    color: rgb(255, 253, 253);
+}
+
+.generos  {
+    text-decoration: none;
+    font-weight: 500;
+    border: 3px solid;
+    padding: 1px 3px;
+    cursor:default;
+}
+.estreno {
+    border-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background-color: rgba(165, 121, 121, 0.304);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5)
+}
+.cficcion {
+    border-color: #d500ff;
+    color: #d500ff;
+    background-color: rgba(213, 0, 255, 0.3);
+    box-shadow: 0 0 30px rgba(213, 0, 255, 0.5);
+}
+.aventura {
+    border-color: #00ff41;
+    color: #00ff41;
+    background-color: rgba(0, 255, 65, 0.3);
+    box-shadow: 0 0 30px rgba(0, 255, 65, 0.5);
+}
+.terror {
+    border-color: #ff0000;
+    color: #ff0000;
+    background-color: rgba(255, 0, 0, 0.3);
+    box-shadow: 0 0 35px rgba(255, 0, 0, 0.6);
+}
+.accion {
+    border-color: #ff6d00;
+    color: #ff6d00;
+    background-color: rgba(255, 109, 0, 0.3);
+    box-shadow: 0 0 30px rgba(255, 109, 0, 0.5);
+}
+.comedia {
+    border-color: #aeea00;
+    color: #aeea00;
+    background-color: rgba(174, 234, 0, 0.3);
+    box-shadow: 0 0 30px rgba(174, 234, 0, 0.5);
+}
+.infantil {
+    border-color: #ff0080;
+    color: #ff0080;
+    background-color: rgba(255, 0, 128, 0.3);
+    box-shadow: 0 0 30px rgba(255, 0, 128, 0.5);
+}
+.fantasia {
+    border-color: #fff200;
+    color: #fff200;
+    background-color: rgba(255, 242, 0, 0.3);
+    box-shadow: 0 0 35px rgba(255, 242, 0, 0.5);
+}
+.suspenso {
+    border-color: #0066ff;
+    color: #0066ff;
+    background-color: rgba(0, 102, 255, 0.3);
+    box-shadow: 0 0 30px rgba(0, 102, 255, 0.5);
+}
+.romance {
+    border-color: #ff0066;
+    color: #ff0066;
+    background-color: rgba(255, 0, 102, 0.3);
+    box-shadow: 0 0 30px rgba(255, 0, 102, 0.5);
+}
+.clasificacion {
+    border-color: #6f6f6f;
+    color: #ffffff;
+    background-color: rgba(96, 96, 96, 0.3);
+    box-shadow: 0 0 30px rgba(123, 123, 123, 0.5);
+}
+
+.titulo-cartelera {
+    display: flex;
+    color: rgb(124, 124, 124);
+    padding: 50px 10px 20px 10px;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    border-bottom: 1px solid gray;
+}
+
+.cartelera-peliculas {
+    padding: 50px 0 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.info-pelicula {
+    position: absolute;
+    bottom: 5px;
+    left: 8px;
+    right: 8px;
+    line-height: 1.3;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    cursor: default;
+    font-size: clamp(8px, 1.5vw, 13px);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    align-items: center;
+}
+.info-pelicula h3 {
+    font-size: clamp(10px, 2vw, 16px);
+    margin: 2px 0;
+    width: 100%;
+}
+.info-pelicula .generos {
+    display: inline-block;
+    margin-bottom: 3px;
+}
+
+.tarjeta-peliculas {
+    flex: 1 1 200px;
+    max-width: 280px;
+    min-width: 140px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.tarjeta-peliculas img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2/3;
+    opacity: 0.7;
+    display: block;
+    border: 1px solid gray;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5)
+}
+.tarjeta-peliculas img:hover {
+    opacity: 0.4;
+}
+
+.boton-reservar {
+    display: block;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.461);
+    border: 3px solid rgb(0, 0, 0);
+    color: rgb(227, 220, 220);
+    font-weight: 700;
+    padding: 5px 8px;
+    cursor: pointer;
+    text-align: center;
+    font-size: clamp(9px, 2vw, 14px);
+    margin-top: 3px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+
+.extras {
+    border-top: 1px solid rgba(128, 128, 128, 0.508);
+    padding: 100px 0;
+    display: flex;
+    color: rgb(109, 109, 107);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    max-height: 100px;
+}
+.extras-enlaces {
+    display: flex;
+    gap:50px
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+.encabezado {
+    flex-direction: row;
+    height: 50px;
+    padding: 0 10px;
+    gap: 5px;
+}
+
+.encabezado h1 {
+    font-size: 16px;
+}
+    
+.encabezado i {
+    display: block;
+    font-size: 20px !important;
+}
+    
+.lista-nav {
+    gap: 8px;
+    font-size: 10px;
+    
+}
+
+.contenido {
+    padding: 20px 10px;
+}
+
+.portada-estreno {
+    position: static;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+}
+
+.tarjeta-poster {
+    padding: 15px 10px;
+    max-width: 100%;
+}
+.tarjeta-poster h2 {
+    font-size: 20px;
+}
+
+.descripcion-peliculas {
+    font-size: 12px;
+}
+
+.botones {
+    padding: 6px 10px;
+    font-size: 12px;
+}
+
+.titulo-cartelera {
+    padding: 30px 10px 15px 10px;
+    gap: 5px;
+}
+.titulo-cartelera h2 {
+    font-size: 18px;
+}
+.titulo-cartelera p {
+    font-size: 12px;
+}
+
+.cartelera-peliculas {
+    padding: 20px 5px;
+    gap: 8px;
+}
+
+.tarjeta-peliculas {
+    flex: 1 1 140px;
+    max-width: 48%;
+    min-width: 130px;
+}
+
+.extras {
+    padding: 25px 10px;
+    gap: 12px;
+    max-height: none;
+}
+.extras-enlaces {
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 10px;
+}
+.extras h3 {
+    font-size: 11px;
+     text-align: center;
+}
+
+}

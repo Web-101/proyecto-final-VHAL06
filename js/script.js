@@ -1,11 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('https://proyecto-final-vhal06.onrender.com/api/cartelera')
+    fetch('http://localhost:3000/api/cartelera')
     .then(respuesta => respuesta.json())
     .then(peliculas => {
-        const cartelera = peliculas.filter(p => p.tipo === 'cartelera');
-        const estrenos = peliculas.filter(p => p.tipo === 'estreno');
-        llenarSeccion('peliculas', cartelera);
-        llenarSeccion('estrenos', estrenos);
+    const cartelera = peliculas.filter(p => p.tipo === 'cartelera');
+    const estrenos = peliculas.filter(p => p.tipo === 'estreno');
+    llenarSeccion('peliculas', cartelera);
+    llenarSeccion('estrenos', estrenos);
+
+    if (window.location.hash) {
+        const id = window.location.hash.substring(1);
+        const el = document.getElementById(id);
+        if (el) el.scrollIntoView(); }
     })
     .catch(error => {
         console.error('Error:', error);});

@@ -4,3 +4,6 @@ Proyecto Completo Final
 
 url para vistazo completo de la version final (estática - sin almacenamiento): [https://neocinema-vhal-estatico.netlify.app/
 ](https://neocinema-vhal-estatico.netlify.app/)
+
+URL GIT-PAGES Version Online: https://web-101.github.io/proyecto-final-VHAL06/ 
+(funcional! con Render)

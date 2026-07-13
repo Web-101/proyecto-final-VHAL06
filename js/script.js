@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('https://proyecto-final-vhhal06.onrender.com/api/cartelera')
+    fetch('https://proyecto-final-vhal06.onrender.com/api/cartelera')
     .then(respuesta => respuesta.json())
     .then(peliculas => {
         const cartelera = peliculas.filter(p => p.tipo === 'cartelera');

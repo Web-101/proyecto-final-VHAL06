@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
     
-    fetch(`http://localhost:3000/api/cartelera/${idPelicula}`)
+    fetch('https://proyecto-final-vhhal06.onrender.com/api/cartelera')
     .then(respuesta => respuesta.json())
     .then(pelicula => {
         llenarDetalles(pelicula);})

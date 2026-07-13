@@ -1,14 +1,17 @@
-
-
-
 .titulo-membresia {
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 25px;
+    font-size: clamp(18px, 4vw, 25px);
     text-align: center;
+    padding: 0 15px;
 }
+
+.titulo-membresia h1 {
+    font-size: clamp(22px, 5vw, 36px);
+}
+
 span, i {
     color: aqua;
 }
@@ -16,96 +19,198 @@ span, i {
 .titulo-membresia p {
     color: gray;
     font-weight: 500;
+    font-size: clamp(12px, 2vw, 16px);
 }
 
 .cuadros {
     display: flex;
-    gap: 40px;
-    margin-top: 140px;
-
+    gap: 30px;
+    margin-top: 80px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
 }
 
 .cuadro {
     display: flex;
     flex-direction: column;
-    width: 380px;
-    height: 530px;
+    width: 320px;
+    min-height: 480px;
     border: 2px solid rgba(0, 255, 255, 0.163);
     color: gray;
     text-align: center;
-    line-height: 2.5;
+    line-height: 2.2;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: clamp(14px, 2vw, 18px);
+    cursor: pointer;
 }
 
 .cuadro:hover {
     border-color: aqua;
 }
 
-.contenedor{
-    width: 100%;     
-    height: 100%;     
+.contenedor {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 15px;
-}
-.contenedor span i {
-    font-size: 40px;
+    padding: 25px 15px;
 }
 
+.contenedor h2 {
+    color: white;
+    margin: 10px 0;
+    font-size: clamp(18px, 3vw, 24px);
+}
+
+.contenedor span i {
+    font-size: clamp(30px, 5vw, 40px);
+}
 
 .bloque-tarjeta {
     width: 100%;
-    height: 300px;
+    min-height: 250px;
     border: 3px solid rgb(18, 61, 18);
     border-radius: 5px;
     color: gray;
     display: flex;
     justify-content: space-between;
-    padding: 0 50px;
+    padding: 30px;
     align-items: center;
-    flex:1;
-    margin: 90px 0;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 60px 0;
     background: linear-gradient(230deg, #085f08, #000000);
 }
+
 .publicidad {
     display: flex;
     flex-direction: column;
-    width: 530px;
-    height: 100%;
+    max-width: 500px;
     line-height: 1.5;
     align-items: flex-start;
-    justify-content: flex-start;
-    padding: 20px;
+    justify-content: center;
+    padding: 10px;
 }
 
 .publicidad h2 {
     color: white;
-    font-size: 30px;
+    font-size: clamp(20px, 4vw, 28px);
 }
 
 .publicidad p {
-    font-size: 20px;
+    font-size: clamp(13px, 2vw, 18px);
     font-weight: 500;
 }
 
-.publicidad p:last-child {
+.publicidad p:last-child, .contenedor p:last-child {
     color: aqua;
+    cursor: pointer;
+    background-color: rgba(0, 255, 255, 0.152);
+    padding: 0 8px;
+    margin-top: 8px;
+    border: 1px solid aqua;
 }
 
 .tarjeta {
-    width: 255px;
-    height: 160px;
+    width: 200px;
+    height: 130px;
     border: 3px solid rgb(17, 144, 17);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
+    font-size: 40px;
     border-radius: 6px;
-        background: linear-gradient(30deg, #085f08, #000000);
+    background: linear-gradient(30deg, #085f08, #000000);
+    flex-shrink: 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.activo {
+    display: flex;
+}
+
+.modal-contenido {
+    background: #12121f;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.modal-contenido h2 {
+    color: white;
+    text-align: center;
+}
+
+.modal-contenido button {
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#btn-cerrar-membresia {
+    background-color: transparent;
+    color: gray;
+    border: 1px solid gray;
+}
 
 
-    
+
+@media (max-width: 768px) {
+
+.cuadros {
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.cuadro {
+    width: 100%;
+    max-width: 350px;
+    min-height: auto;
+}
+
+.contenedor {
+    padding: 20px;
+}
+
+.bloque-tarjeta {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    margin: 40px 0;
+}
+
+.publicidad {
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+}
+
+.tarjeta {
+    width: 150px;
+    height: 100px;
+    font-size: 30px;
+}
+
 }

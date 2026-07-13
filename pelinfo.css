@@ -5,15 +5,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: default;
 }
 
 .caja-portada {
     width: 350px;
-    height: 350px;
-    box-shadow: 0 0 10px 8px rgba(8, 77, 77, 0.776);
-    border: 15px solid rgba(35, 36, 36, 0.586);
+    height: 450px;
+    box-shadow: 0 0 10px 8px rgba(7, 255, 255, 0.776);
+    border: 8px solid rgba(11, 12, 12, 0.586);
     border-radius: 8px;
-
 }
 
 .caja-portada img {
@@ -32,6 +32,10 @@
     color: cyan;
     border-color: cyan;
     cursor: pointer;
+}
+.trailer-btn:hover {
+    background-color: aqua;
+    color: black;
 }
 
 .especificaciones {
@@ -69,6 +73,7 @@
 
 .contenido-principal {
     flex: 1;
+    min-width: 0;
 }
 
 .detalles-peliculas {
@@ -80,56 +85,50 @@
     gap: 40px;
     align-items: flex-start;
     color: gray;
+    cursor: default;
 }
 
 .etiquetas {
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-start;
-    gap: 10px;
-
+    gap: 8px;
 }
 
-
-.clasificacion {
-    border: 3px solid gray;
-    display: flex;
-    justify-content: center;
-    width: 40px;
-    height: 27.5px;
-    background-color: rgba(128, 128, 128, 0.324);
-}
 
 .titulo-detalles h1 {
     color: white;
-    font-size: 50px;
+    font-size: clamp(28px, 5vw, 50px);
+    word-wrap: break-word;
 }
 
 .datos-pelicula {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     padding: 20px 2px;
     border-bottom: 2px solid rgba(128, 128, 128, 0.382);
+    font-size: clamp(12px, 2vw, 16px);
 }
 .datos-pelicula i {
     color: aqua;
 }
 
-.sinopsis{
+.sinopsis {
     background-color: rgba(48, 43, 43, 0.368);
     margin-top: 30px;
     padding: 20px;
     border-radius: 8px;
 }
-.sinopsis h3{
+.sinopsis h2 {
     color: white;
-    font-size: 30px;
+    font-size: clamp(22px, 3vw, 30px);
     padding-bottom: 10px;
 }
 .sinopsis p {
-    font-size: 18px;
+    font-size: clamp(14px, 2vw, 18px);
     color: rgba(23, 236, 255, 0.518);
 }
-
 
 .horarios {
     margin: 40px 0;
@@ -140,9 +139,8 @@
 
 .horarios h3 {
     color: white;
-    font-size: 26px;
-    width: 100%;  
-
+    font-size: clamp(20px, 3vw, 26px);
+    width: 100%;
 }
 .horarios i {
     color: aqua;
@@ -151,29 +149,42 @@
 .sucursal {
     margin: 20px 0;
     background-color: rgba(48, 43, 43, 0.368);
-    flex-wrap: wrap;
     display: flex;
+    flex-direction: column;
     width: 350px;
-    height: 250px;
+    min-height: 200px;
     padding: 27px;
 }
 .sucursal h4 {
     color: rgb(128, 128, 128);
-    font-size: 20px;
+    font-size: clamp(16px, 2vw, 20px);
+    margin-bottom: 15px;
 }
 
-.botones-horario{
+.botones-horario {
     display: flex;
     flex-wrap: wrap;
-    gap: 1px 6px;
+    gap: 6px;
+    width: 100%;
 }
 
-.botones-horario button{
+.boton-horario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
     width: 145px;
     height: 70px;
     background-color: rgba(48, 43, 43, 0.368);
-    border-color: rgb(67, 77, 77);
+    border: 2px solid rgb(67, 77, 77);
     color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.boton-horario:hover {
+    border-color: aqua;
+    color: aqua;
 }
 
 .reparto {
@@ -181,7 +192,6 @@
     margin-top: 30px;
     padding: 20px;
     border-radius: 8px;
-
 }
 
 .reparto h3 {
@@ -191,22 +201,142 @@
 
 .actores {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 20px;
-    width: 50px;
-    height: 150px;
+    gap: 15px;
+    width: 100%;
+    height: auto;
     padding-top: 10px;
 }
 
-.perfil-actor img{
+.perfil-actor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 80px;
-    height: 80px;
+}
+
+.perfil-actor img {
+    width: 65px;
+    height: 65px;
     border-radius: 8px;
     border: 2px solid gray;
-    justify-content: center;
 }
 
 .perfil-actor h4 {
     color: aqua;
+    text-align: center;
+    font-size: 11px;
+    margin-top: 4px;
+    word-wrap: break-word;
+    max-width: 80px;
+}
+
+
+
+@media (max-width: 768px) {
+
+.detalles-peliculas {
+    flex-direction: column;
+    padding: 20px 10px;
+    gap: 20px;
+}
+
+.contenido-principal {
+    width: 100%;
+}
+
+.info-lateral {
+    order: -1;
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.caja-portada {
+    width: 200px;
+    height: 280px;
+    border-width: 6px;
+}
+
+.trailer-btn {
+    width: 200px;
+    height: 40px;
+    margin-top: 0;
+    font-size: 14px;
+}
+
+.especificaciones h3 {
+    font-size: 18px;
+}
+
+.etiquetas {
+    gap: 5px;
+}
+
+.generos {
+    font-size: 10px;
+    border-width: 2px;
+}
+
+.clasificacion {
+    min-width: 28px;
+    height: 19px;
+    font-size: 11px;
+}
+
+.datos-pelicula {
+    gap: 10px;
+}
+
+.sinopsis {
+    padding: 15px;
+}
+
+.horarios {
+    flex-direction: column;
+    gap: 10px;
     justify-content: center;
+}
+
+.sucursal {
+    width: 100%;
+    min-height: auto;
+    padding: 15px;
+    margin: 10px 0;
+    align-items: center;
+    text-align: center;
+}
+
+.botones-horario {
+    justify-content: center;
+}
+
+.boton-horario {
+    width: 65px;
+    height: 42px;
+    font-size: 13px;
+}
+
+.actores {
+    gap: 10px;
+    justify-content: center;
+}
+    
+.perfil-actor {
+    width: 70px;
+}
+
+.perfil-actor img {
+    width: 50px;
+    height: 50px;
+    }
+
+.perfil-actor h4 {
+    font-size: 10px;
+    max-width: 70px;
+}
+
 }
